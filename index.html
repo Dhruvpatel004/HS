@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Patel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/project-section.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/awards.css" />
+
+
+
+    <link rel="icon" href="images/logo.png" />
+    <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        /* @font-face {
+            font-family: 'GT-Sectra-Fine-Bold';
+            font-weight: 700;
+            font-style: normal;
+            src: url("/assets/fonts/GT-Sectra-Fine-Medium.eot");
+            src: url("/assets/fonts/GT-Sectra-Fine-Medium.eot?#iefix") format("eot"), url("/assets/fonts/GT-Sectra-Fine-Medium.woff2") format("woff2"), url("/assets/fonts/GT-Sectra-Fine-Medium.woff") format("woff"), url("/assets/fonts/GT-Sectra-Fine-Medium.ttf") format("truetype")
+        }
+
+        @font-face {
+            font-family: 'GT-Sectra-Fine';
+            font-weight: 400;
+            font-style: normal;
+            src: url("/assets/fonts/GT-Sectra-Fine-Book.eot");
+            src: url("/assets/fonts/GT-Sectra-Fine-Book.eot?#iefix") format("eot"), url("/assets/fonts/GT-Sectra-Fine-Book.woff2") format("woff2"), url("/assets/fonts/GT-Sectra-Fine-Book.woff") format("woff"), url("/assets/fonts/GT-Sectra-Fine-Book.ttf") format("truetype")
+        }
+
+        @font-face {
+            font-family: 'nb_akademie_medium';
+            font-weight: 700;
+            font-style: normal;
+            src: url("/assets/fonts/nb_akademie_medium-webfont.eot");
+            src: url("/assets/fonts/nb_akademie_medium-webfont.eot?#iefix") format("eot"), url("/assets/fonts/nb_akademie_medium-webfont.woff2") format("woff2"), url("/assets/fonts/nb_akademie_medium-webfont.woff") format("woff"), url("/assets/fonts/nb_akademie_medium-webfont.ttf") format("truetype")
+        }
+
+        @font-face {
+            font-family: 'nb_akademie_light';
+            font-weight: 400;
+            font-style: normal;
+            src: url("/assets/fonts/nb_akademie_light-webfont.eot");
+            src: url("/assets/fonts/nb_akademie_light-webfont.eot?#iefix") format("eot"), url("/assets/fonts/nb_akademie_light-webfont.woff2") format("woff2"), url("/assets/fonts/nb_akademie_light-webfont.woff") format("woff"), url("/assets/fonts/nb_akademie_light-webfont.ttf") format("truetype")
+        } */
+
+        .st0 {
+            fill: #fff;
+        }
+
+        canvas {
+            background-color: #000;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #fff;
+            top: 0px;
+            overflow: hidden;
+            left: 0;
+        }
+
+
+        .ml13,
+        .ml14,
+        .ml15,
+        .ml16 {
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 10;
+            display: inline-block;
+        }
+
+
+        .ml13 .letter,
+        .ml14 .letter,
+        .ml15 .letter,
+        .ml16 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        .custom-nav a {
+            text-decoration: none;
+            list-style-type: none;
+            font-family: "nb_akademie_light", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+            color: #fff !important;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .custom-nav li {
+            text-decoration: none;
+            cursor: pointer;
+            margin-right: 70px;
+            padding-right: 50px;
+        }
+
+        .custom-nav li div #border {
+            border-bottom: #fff solid 2px;
+            left: 10%;
+            transition: 1s;
+            width: 0px;
+        }
+
+        .custom-nav li div:hover #border {
+            border-bottom: #fff solid 2px;
+            left: 10%;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body class="">
+    <header>
+        <nav class="navbar px-0">
+            <div class="container-fluid ">
+                <div class="navbar-brand">
+                    <!-- <a class="" href="index.html">
+						<img src="https://www.birthmarque.com/images/logo-header.svg" alt="Birth Marque Logo"/>
+                    </a> -->
+                    <div id="arrow-line">
+                        <svg class="cursorNone" id="arrow-svg" viewBox="0 0 42 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.3536 4.35355C41.5488 4.15829 41.5488 3.84171 41.3536 3.64645L38.1716 0.464466C37.9763 0.269204 37.6597 0.269204 37.4645 0.464466C37.2692 0.659728 37.2692 0.976311 37.4645 1.17157L40.2929 4L37.4645 6.82843C37.2692 7.02369 37.2692 7.34027 37.4645 7.53553C37.6597 7.7308 37.9763 7.7308 38.1716 7.53553L41.3536 4.35355ZM0 4.5H41V3.5H0V4.5Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-md-auto custom-nav">
+                        <a href="#aboout">
+                            <li class="nav-item ">
+                                <div>
+                                    <h1 class="ml13">ABOUT ME
+                                    </h1>
+                                    <div id="border"></div>
+                                </div>
+                                <!-- <a class="nav-link" href="about.html">About</a> -->
+                            </li>
+                        </a>
+                        <a href="#hs">
+                            <li class="nav-item ">
+                                <div>
+                                    <h1 class="ml13">VALUES & ETHICS
+                                    </h1>
+                                    <div id="border"></div>
+                                </div>
+                                <!-- <a class="nav-link" href="about.html">About</a> -->
+                            </li>
+                        </a>
+                        <a href="#contact-section">
+                            <li class="nav-item">
+                                <div>
+                                    <h1 class="ml16">CONTACT</h1>
+                                    <div id="border"></div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#skills">
+                            <li class="nav-item ">
+                                <div>
+                                    <h1 class="ml14"></h1>
+                                    <!-- <div id="border"></div> -->
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#projects-section">
+                            <li class="nav-item ">
+                                <div>
+                                    <h6 class="ml15"></h6>
+                                    <!-- <div id="border"></div> -->
+                                </div>
+                            </li>
+                        </a>
+                       
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" id="birthHamburger">
+                    <span class="icon-bar one"></span>
+                    <span class="icon-bar two"></span>
+                    <span class="icon-bar three"></span>
+                    <div class="SM-svgIcon hamBurgerIcon" id="icon">
+                        <svg version="1.1" id="BM" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="74px"
+                            viewBox="0 0 80 74" style="enable-background:new 0 0 80 74;" xml:space="preserve">
+                            <path class="st0"
+                                d="M34.8,69.8C26,64.1,23.5,55.8,20.3,47c-1.7-4.8-8-8.7-12.3-11.2c-14.3-8.5-7-20.1,3.9-27.5
+												C24.6-0.4,42.6-2.9,57.6,3.8c6.7,3,11.9,7.4,15.7,12.6c7.3,10.2,8.8,23.4,3.9,34.9C68.8,71.1,50.5,79.9,34.8,69.8z" />
+
+                        </svg>
+
+                    </div>
+                </button>
+                <div class="navbar-menuWrap" id="menuWrap">
+                    <div class="container-fluid py-4">
+                        <ul class="navbar-nav h-100 justify-content-center w-75 pt-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboout">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hs">VALUES & ETHICS</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#projects-section">Project</a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+								<a class="nav-link" href="case-studies.html">Case Studies</a>
+							</li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-section">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="scroll-down">
+
+        <div id="social-contact">
+            <a target="_blank" class="social-link cursorNone" href="https://github.com/Dhruvpatel004/"><i
+                    class="fab fa-github"></i></a>
+            <a target="_blank" class="social-link cursorNone" href="https://twitter.com/Patel__Dhruv_"><i
+                    class="fab fa-twitter"></i></a>
+            <a target="_blank" class="social-link cursorNone"
+                href="https://www.linkedin.com/in/dhruv-patel-209828228/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <!-- <div class="section"> -->
+    <!-- <canvas id="canvas"></canvas> -->
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/vaadin" title="Vaadin">Vaadin</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+    <div class="page-outer" id="main">
+        <section id="section-home" class="section-full section-home js-page-home loaded smooth-scroll-wrapper">
+
+
+            <div class="text-zone">
+                <span class="tags top-tags"> &lt;/html&gt; <br> &lt;body&gt;</span>
+                <h1 aria-label=" Hi,  I’m Dhruv Patel" class="blast-root">
+                    <span class="blast" aria-hidden="true" style="opacity: 1;">H</span><span class="blast"
+                        aria-hidden="true" style="opacity: 1;">i</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">,</span> <br><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">I</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">’</span><span class="blast" aria-hidden="true" style="opacity: 1;">m</span>
+                    <img width="53" height="72" src="images/logo.png" alt="Wordpress Developer Name, Web Developer Name"
+                        class="animation-logo"> <span class="blast" aria-hidden="true" style="opacity: 1;">h</span><span
+                        class="blast" aria-hidden="true" style="opacity: 1;">r</span><span class="blast"
+                        aria-hidden="true" style="opacity: 1;">u</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">v</span>
+                    <!-- <span class="blast" aria-hidden="true" -->
+                    <!-- style="opacity: 1;">s</span><span class="blast" aria-hidden="true" -->
+                    <!-- style="opacity: 1;">h</span><span class="blast" aria-hidden="true" -->
+                    <!-- style="opacity: 1;">i</span><span class="blast" aria-hidden="true" style="opacity: 1;">,</span> -->
+                    <br><span class="blast" aria-hidden="true" style="opacity: 1;">C</span><span class="blast"
+                        aria-hidden="true" style="opacity: 1;">S</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">E</span> <span class="blast" aria-hidden="true"
+                        style="opacity: 1;">S</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">t</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">u</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">d</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">e</span><span class="blast" aria-hidden="true"
+                        style="opacity: 1;">n</span><span class="blast" aria-hidden="true" style="opacity: 1;">t</span>
+                    <!-- <span class="blast" aria-hidden="true" -->
+                    <!-- style="opacity: 1;">e</span> -->
+                    <!-- <span class="blast" aria-hidden="true" style="opacity: 1;">r</span> -->
+                </h1>
+                <p class="gray-text"> SOFTWARE ENGINEER | WEB DEVELOPER | GRAPHIC DESIGNER </p>
+            </div>
+
+            <canvas style="position: absolute;left:0;z-index: -1;background-color:  #1d1d1d;" id="canvas" width="1536"
+                height="722"></canvas>
+
+
+
+            <div class="scroll-down scroll-down--left">
+                <span>scroll down</span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                    class="svg-inline--fa fa-arrow-down fa-w-14 fa-5x">
+                    <path fill="currentColor"
+                        d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z"
+                        class=""></path>
+                </svg>
+            </div>
+        </section>
+
+
+        <section id="aboout">
+
+            <div id="about-section">
+                <div class="hiddena" id="about-section-title">
+                    <div class="popo hidden">
+                        <h1 class="cursor-Big">About Me</h1>
+                        <!-- <h1 class="cursor-Big">Experience</h1> -->
+                    </div>
+                </div>
+            </div>
+            <div class="section-about">
+                <div class="text-zone">
+                    <p>Hello there! Am an enthusiastic programmer pursuing B.Tech degree specialised in CSE at CSPIT
+                        CHARUSAT.</p>
+                    <p>I currently work as backend developer at CLDC ( Charusat learning and development club ).</p>
+                    <p>Open to work for organization which provides opportunity to improve my skills and knowledge to
+                        grow along with the organizational objective.</p>
+
+                    <!-- <p>Ability to translate business requirements into technical solutions.</p> -->
+                    <!-- <p>
+                        Hello there, introducing myself I'm currently pursuing BE Degree Specialised in CSE. I really enjoy programming and always love to learn something new. I spend much of my free time working on programming projects and I have experience working for a non-profit organization on a web development team as a front-end developer. I am interested in gaining experience in developer roles of any kind.
+                        
+                    </p>
+                    <p>
+                        For over a long time I had many opportunities to work in a vast spectrum of web technologies what
+                        let me gather a significant amount of various experience. Working for companies and individuals around the globe I met and learnt from amazing and ambitious people. I have experience of working on various projects like Converting Scratch Project into Wordpress Theme, 
+                    </p>
+
+                    <p>
+                        I currently work remotely with a selected freelance client base and am open for new opportunities. 
+                    </p> -->
+                    <a>
+                        <a class="dl-button">
+                            <div>
+                                <div class="icon">
+                                    <div>
+                                        <svg class="arrow" viewBox="0 0 20 18" fill="currentColor">
+                                            <polygon points="8 0 12 0 12 9 15 9 10 14 5 9 8 9"></polygon>
+                                        </svg>
+                                        <svg class="shape" viewBox="0 0 20 18" fill="currentColor">
+                                            <path
+                                                d="M4.82668561,0 L15.1733144,0 C16.0590479,0 16.8392841,0.582583769 17.0909106,1.43182334 L19.7391982,10.369794 C19.9108349,10.9490677 19.9490212,11.5596963 19.8508905,12.1558403 L19.1646343,16.3248465 C19.0055906,17.2910371 18.1703851,18 17.191192,18 L2.80880804,18 C1.82961488,18 0.994409401,17.2910371 0.835365676,16.3248465 L0.149109507,12.1558403 C0.0509788145,11.5596963 0.0891651114,10.9490677 0.260801785,10.369794 L2.90908938,1.43182334 C3.16071592,0.582583769 3.94095214,0 4.82668561,0 Z">
+                                            </path>
+                                        </svg>
+                                    </div><span></span>
+                                </div>
+                                <div class="label">
+                                    <div class="show default">Resume</div>
+                                    <div class="state">
+                                        <div class="counter">
+                                            <ul>
+                                                <li></li>
+                                                <li>1</li>
+                                            </ul>
+                                            <ul>
+                                                <li>0</li>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>0</li>
+                                            </ul>
+                                            <ul>
+                                                <li>0</li>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>0</li>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>0</li>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>0</li>
+                                            </ul><span>%</span>
+                                        </div><span>Done</span>
+                                    </div>
+                                </div>
+                                <div class="progress"></div>
+                            </div>
+                        </a>
+                    </a>
+                    <p></p>
+
+                </div>
+
+
+                <div class="tilt tilt-movie" data-tilt data-tilt-glare="true" data-tilt-scale="1.1">
+                    <!-- <span class="tilt-logo-inner">
+                    Devarshi Doshi
+                </span> -->
+                    <!-- <img
+                    src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTU4ODQzNDg0Nl5BMl5BanBnXkFtZTgwNjQ5MTE0MjI@._V1_SY1000_SX675_AL_.jpg"> -->
+                    <img src="images/me.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="hs">
+
+            <div id="skill-section">
+                <div class="hiddens" id="skill-section-title">
+                    <div class="popo hidden">
+                        <h1 class="cursor-Big">Ethical Values</h1>
+                        <!-- <h1 class="cursor-Big">Experience</h1> -->
+                    </div>
+                </div>
+            </div>
+            <div class="section-about">
+                <div class="text-zone">
+                    <p>
+                        The term value is ambiguous because it has been used indiscriminately by Philosophers,
+                        Psychologists, Administrators, Political scientists, Economists, Sociologists, Anthropologists,
+                        Engineers, Medical Practitioners, Lawyers, and others; as a result, it is necessary for us to
+                        examine the word's etymological origin in order to comprehend its meaning in the context of
+                        ethics.
+                        The word "Value" comes from the Latin word "Valere," which means "to be valuable." As a result,
+                        the term value etymologically refers to the worth of something. By way of economics, the term
+                        'value' found its way into ethics.
+                    </p>
+                    <br />
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                
+                               
+                                <img src="https://cdn.dorik.com/64231dce3bc0190012511e40/6423d7463bc01900125122d5/images/Screenshot-2023-03-29-at-1.42.27-PM_8y1kkugc.png" alt="" srcset="" height="100px">
+                                <img src="https://cdn.dorik.com/64231dce3bc0190012511e40/6423d7463bc01900125122d5/images/Screenshot-2023-03-29-at-1.42.35-PM_l534peye.png" alt="" srcset="" height="100px">
+                                <img src="https://cdn.dorik.com/64231dce3bc0190012511e40/6423d7463bc01900125122d5/images/Screenshot-2023-03-29-at-1.42.42-PM_pku5416l.png" alt="" srcset="" height="100px">
+
+                            </div>
+                           
+                        </div>
+                        <div class="accordion-item">
+                            <!-- &nbsp; -->
+                            <div class="accordion-item-header">
+                               <img src="https://myrealestateauthority.files.wordpress.com/2019/10/ethics-graphic.jpeg?w=1024" alt="" srcset="" height="300px">
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <!-- &nbsp; -->
+                            
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="skills-charts">
+
+                    <div id="myCanvasContainer">
+                        <canvas width="500" height="500" id="myCanvas">
+                            <ul>
+                                <li>
+                                    <a data-weight="25" href="#" target="_blank">Honesty</a>
+                                </li>
+                                <li><a data-weight="25" href="#" target="_blank">Respect</a></li>
+                                <li><a data-weight="25" href="#" target="_blank">Responsibility</a></li>
+                                <li><a data-weight="25" href="#">Faithfulness</a>
+                                </li>
+                                <li><a data-weight="24" href="#">Open-mindedness</a></li>
+                                <li><a data-weight="14" href="#" target="_blank">Caring</a>
+                                </li>
+                                <li><a data-weight="13" href="#"> Loyalty</a>
+                                </li>
+                                <li><a data-weight="14" href="#">Self-Control</a>
+                                </li>
+                                <li><a data-weight="26" href="#">Work Ethic</a>
+                                </li>
+                                <li><a data-weight="26" href="#">Humility</a></li>
+
+                                <li><a data-weight="21" href="#">Forgiveness</a></li>
+
+                                <li><a data-weight="26" href="#"></a> Kindness</li>
+
+
+
+                            </ul>
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-about" id="projects-section">
+
+            <div class="hidden" id="projects-section-title">
+                <div class="popo hidden">
+                    <h3 class="cursor-Big">Videos to improve ethics and values</h3>
+                    <!-- <h1 class="cursor-Big">Experience</h1> -->
+                </div>
+            </div>
+        </section>
+        <div class="content" style=" background: #1d1d1d;
+            color: #1c1d25;
+            font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
+              serif;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            will-change: transform;
+            overflow-x: hidden;
+            line-height: 1.5;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.25s;
+            padding-top:30px;
+            padding-bottom:30px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;">
+
+            <ul class="case-studies-list">
+                <li>
+                    <a href="#" style="background-image: url('https://tse4.mm.bing.net/th?id=OIP.qno4ev0NohCbURDaoDdP7gHaFX&pid=Api&P=0')" class="case-study">
+                        <div class="case-study-mask"></div>
+                        <div class="case-study-reveal-mask"></div>
+                        <div class="case-study-mask-number">
+                            <div class="case-study-mask-back">01</div>
+                            <div class="case-study-mask-front">
+                                <div data-index="01" class="case-study-mask-overlay">"01"</div>
+                            </div>
+                        </div>
+                        <div class="case-study-text-section">
+                            <h3 itemprop="name" class="h2 case-study-title">Why we need core values</h3>
+                            <h5 itemprop="description" class="case-study-subtitle">
+                                By James Franklin | TEDxPSU
+                            </h5>
+                            <button class="the-button call-to-button">
+                                <span class="button-text"
+                                    onclick="window.location.href='https://youtu.be/EtLY7dYAOpo'">View
+                                    Video</span>
+                                <div class="button-mask"></div>
+                                <span class="button-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+                                        <path
+                                            d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- 2nd Project -->
+                <li>
+                    <a href="#" style="background-image: url('https://image.slidesharecdn.com/importanceofvalues-121123024210-phpapp01/95/importance-of-values-3-638.jpg?cb=1353638613')" class="case-study">
+                        <div class="case-study-mask"></div>
+                        <div class="case-study-reveal-mask"></div>
+                        <div class="case-study-mask-number">
+                            <div class="case-study-mask-back">02</div>
+                            <div class="case-study-mask-front">
+                                <div data-index="02" class="case-study-mask-overlay">"02"</div>
+                            </div>
+                        </div>
+                        <div class="case-study-text-section">
+                            <h3 itemprop="name" class="h2 case-study-title">The Power of Core Values</h3>
+                            <h5 itemprop="description" class="case-study-subtitle">
+                                By  Tamaray White | TEDxCoastalCarolinaUniversity
+                            </h5>
+                            <button class="the-button call-to-button"
+                                onclick="window.location.href='https://youtu.be/bBReUihlR10'">
+                                <span class="button-text">View Video</span>
+                                <div class="button-mask"></div>
+                                <span class="button-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+                                        <path
+                                            d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" style="background-image: url('https://tse4.mm.bing.net/th?id=OIP.Ouq42vjfi8aCejMr7CbqFAHaE9&pid=Api&P=0')" class="case-study">
+                        <div class="case-study-mask"></div>
+                        <div class="case-study-reveal-mask"></div>
+                        <div class="case-study-mask-number">
+                            <div class="case-study-mask-back">03</div>
+                            <div class="case-study-mask-front">
+                                <div data-index="03" class="case-study-mask-overlay">"03"</div>
+                            </div>
+                        </div>
+                        <div class="case-study-text-section">
+                            <h3 itemprop="name" class="h2 case-study-title">Family Values</h3>
+                            <h5 itemprop="description" class="case-study-subtitle">
+                                By Deon Jones | TEDxAmericanUniversity
+                            </h5>
+                            <button class="the-button call-to-button"
+                                onclick="window.location.href='https://youtu.be/vehD1sqY9wk'">
+                                <span class="button-text">View Video</span>
+                                <div class="button-mask"></div>
+                                <span class="button-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+                                        <path
+                                            d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </a>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+
+
+        <!-- <section id="award-section" style="margin-top:0px">
+
+            <div class="hidden" id="award-section-title">
+                <div class="popo hiddenac">
+                    <h1 class="cursor-Big">Achievements</h1>
+                    <h1 class="cursor-Big">Experience</h1>
+                 </div>
+            </div>
+
+
+            <div class="section-about contact-sec">
+
+                <section class="cards-wrapper">
+
+                    <div class="card">
+                        <picture>
+                            <img loading="lazy" src="images/CDC 2016.jpg" alt="Image 01">
+                        </picture>
+
+                        <div class="overlay">
+                             <h2>Title</h2> -->
+        <!-- <p>Secured 2nd Position in CDC 2016 CSI Vadodara Chapter For Web Designing</p>
+                             <a class="button" title="Learn More" href="#">Learn More</a> -->
+        <!-- </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>   -->
+
+
+        <section id="contact-section" style="margin-top:0px">
+
+            <div class="hidden" id="contact-section-title">
+                <div class="popo hiddenc">
+                    <h1 class="cursor-Big">Contact Me</h1>
+                    <!-- <h1 class="cursor-Big">Experience</h1> -->
+                </div>
+            </div>
+
+
+
+            <div class="section-about contact-sec">
+
+                <div class="text-zone">
+                    <form action="https://formspree.io/f/xnqygnej" method="POST" id="my-form" class="custom-form">
+                        <div class="col-custom input-effect">
+                            <input class="effect-21" type="text" id="firstName" name="firstName" placeholder=""
+                                required />
+                            <label>First Name</label>
+                            <span class="focus-border">
+                                <i></i>
+                            </span>
+                        </div>
+                        <div class="col-custom input-effect">
+                            <input class="effect-21" type="text" id="lastName" name="lastName" placeholder=""
+                                required />
+                            <label>Last Name</label>
+                            <span class="focus-border">
+                                <i></i>
+                            </span>
+                        </div>
+                        <div class="col-custom input-effect">
+                            <input class="effect-21" type="email" id="email" name="email" placeholder="" required />
+                            <label>Email</label>
+                            <span class="focus-border">
+                                <i></i>
+                            </span>
+                        </div>
+                        <div class="col-custom input-effect" style="height:105px;">
+
+                            <textarea class="effect-21" type="textarea" id="message" name="message" required></textarea>
+                            <label>Message</label>
+                            <span class="focus-border">
+                                <i></i>
+                            </span>
+
+                        </div>
+                        <div class="col-custom" style="  display: flex;
+                    justify-content: center;
+                    align-items: center; padding-top: 10px;">
+                            <div class="center">
+
+                                <button class="btn" type="submit">
+                                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                    </svg>
+                                    <span>SUBMIT</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="status"></div>
+                </div>
+
+                <div class="text-zone connect-me">
+                    <a target="_blank" class="cursorNone" href="https://github.com/Dhruvpatel004"><i
+                            class="fab fa-github"></i>&nbsp;Dhruvpatel004</a><br /><br />
+                    <a target="_blank" class="cursorNone" href="https://twitter.com/Patel__Dhruv_"><i
+                            class="fab fa-twitter"></i>&nbsp;Patel__Dhruv_</a><br /><br />
+                    <a target="_blank" class="cursorNone" href="https://www.linkedin.com/in/pateldhruv004/"><i
+                            class="fab fa-linkedin-in"></i>&nbsp;pateldhruv004</a><br /><br />
+                    <a target="_blank" class="cursorNone" href="mailto:pateldhruvn2004@gmail.com"><i
+                            class="fas fa-envelope"></i>&nbsp;pateldhruvn2004@gmail.com</a><br /><br />
+                    <a target="_blank" class="cursorNone" href="https://www.instagram.com/_dhruv__patel._/"><i
+                            class="fab fa-instagram"></i>&nbsp;_dhruv__patel._</a><br /><br />
+
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="bottom-footer" style="margin-top:50px;">
+            <div
+                style="align-content: center; align-items: center; justify-content: center; display:flex; flex-direction: column;">
+                <div class="col my-auto"><span id="year"></span> © Dhruv Patel</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- </div> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".col-custom input").val("");
+            // console.log("Loaded");
+
+            $(".input-effect input").focusout(function () {
+                if ($(this).val() != "") {
+                    $(this).addClass("has-content");
+                } else {
+                    $(this).removeClass("has-content");
+                }
+            })
+
+            $(".input-effect textarea").focusout(function () {
+                if ($(this).val() != "") {
+                    $(this).addClass("has-content");
+                } else {
+                    $(this).removeClass("has-content");
+                }
+            })
+        });
+    </script>
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById('year').innerHTML = year;
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.js"></script>
+    <script type="text/javascript" src="js/vendor/hover-effect.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+    <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script> -->
+
+
+
+    <script src="js/app.js"></script>
+    <!-- https://github.com/gijsroge/tilt.js -->
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+
+</body>
+
+</html>
