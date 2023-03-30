@@ -891,7 +891,7 @@ function ajax(method, url, data, success, error) {
 
 $('.dl-button').on('click', e => {
     e.preventDefault();
-     window.location.href = "../images/Resume.pdf";
+     window.location.href = "https://drive.google.com/file/d/1c7GvRtPggVgTqpfRxBNHZnjdZ2y6AJQu/view?usp=sharing";
      e.target.setAttribute("target", "_blank");
 
     let btn = $(e.currentTarget),
